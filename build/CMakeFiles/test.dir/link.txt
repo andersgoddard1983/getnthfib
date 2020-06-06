@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall  -rdynamic CMakeFiles/test.dir/main.cpp.o CMakeFiles/test.dir/FibonacciTest.cpp.o  -o test  -L/home/betsysworld4/googletest/build/lib -Wl,-rpath,/home/betsysworld4/googletest/build/lib -lpthread -lgmock -lgtest 

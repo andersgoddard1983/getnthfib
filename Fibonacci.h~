@@ -1,0 +1,6 @@
+#ifdef Fibonacci_h
+#define Fibonacci_h
+
+class Fibonacci {
+
+}
