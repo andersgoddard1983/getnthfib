@@ -1,27 +1,19 @@
-class Fibonacci
-{
-public:
-  int nthFib(int n) {
-    if (n == 1) return 0;
-    if (n == 2) return 1;
-    return 0;
-  }
-};
 #include "gmock/gmock.h"
-using ::testing::Eq;
+#include "Fibonacci.h"
 
-TEST(FibonacciExample, Returns0ForFirstN) {
+using namespace testing;
+
+class FibonacciExample: public Test {
+public:
   Fibonacci fibonacci;
+};
 
+TEST_F(FibonacciExample, Returns0ForFirstN) {
   auto result = fibonacci.nthFib(1);
-
   ASSERT_THAT(result, Eq(0));
 }
 
-TEST(FibonacciExample, Returns1ForSecondN) {
-  Fibonacci fibonacci;
-
+TEST_F(FibonacciExample, Returns1ForSecondN) {
   auto result = fibonacci.nthFib(2);
-
   ASSERT_THAT(result, Eq(1));
 }

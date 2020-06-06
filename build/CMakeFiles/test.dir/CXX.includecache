@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
+/home/betsysworld4/fibonacci/Fibonacci.h
+
 /home/betsysworld4/fibonacci/FibonacciTest.cpp
 gmock/gmock.h
 /home/betsysworld4/fibonacci/gmock/gmock.h
+Fibonacci.h
+/home/betsysworld4/fibonacci/Fibonacci.h
 
 /home/betsysworld4/googletest/googlemock/include/gmock/gmock-actions.h
 errno.h
