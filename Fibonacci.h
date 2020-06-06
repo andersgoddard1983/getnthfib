@@ -5,13 +5,16 @@ class Fibonacci
 {
  public:
   int nthFib(int n) {
-    if (n > 2) {
-      return nthFib(n-1) + nthFib(n-2);
-    } else if (n == 1){
-      return 0;
-    } else {
-    return 1;
+    int lastTwo[2] = {0, 1};
+    int counter = 3;
+    while (counter <= n){
+      int next = lastTwo[0] + lastTwo[1];
+      lastTwo[0] = lastTwo[1];
+      lastTwo[1] = next;
+      counter += 1;
     }
+    if (n > 1) return lastTwo[1];
+    return lastTwo[0];
   }
 };
 
